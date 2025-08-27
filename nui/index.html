@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spawn Point Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="spawn-terminal" class="hidden"> 
+        <div class="terminal-panel"> 
+            <header class="terminal-header">
+                <h1>// SELECT DEPLOYMENT COORDINATES</h1>
+                <p>STATUS: AWAITING INPUT<span class="blinking-cursor">_</span></p>
+            </header>
+
+            <main class="locations-list">
+            </main>
+
+            <footer class="terminal-footer">
+                <button id="confirm-spawn" disabled>[ INITIATE DEPLOYMENT ]</button>
+            </footer>
+        </div>
+    </div>
+    <div id="location-dossier" class="hidden">
+    <div class="dossier-content">
+        <h1 id="dossier-location-name">NO TARGET</h1>
+        <hr class="dossier-divider">
+        <div class="dossier-grid">
+            <div><label>DISTRICT</label><span id="dossier-district">...</span></div>
+            <div><label>COORDINATES</label><span id="dossier-coords">...</span></div>
+            <div><label>ELEVATION</label><span id="dossier-elevation">...</span></div>
+            <div><label>WEATHER</label><span id="dossier-weather">...</span></div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
